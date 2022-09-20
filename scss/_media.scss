@@ -152,10 +152,15 @@
   // Work
   .items {
     grid-template-columns: 1fr;
-
     .item {
       &::after {
         opacity: 0;
+      }
+
+      &:hover {
+        &::after {
+          transform: none;
+        }
       }
     }
   }
