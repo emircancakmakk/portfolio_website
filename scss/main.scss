@@ -335,8 +335,7 @@ img {
       grid-template-areas:
         "name email"
         "subject phone"
-        "message message"
-        "recaptcha recaptcha";
+        "message message";
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -368,14 +367,6 @@ img {
         &:focus {
           outline-color: $main-color;
         }
-      }
-
-      .recaptcha {
-        grid-area: recaptcha;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
     }
 
