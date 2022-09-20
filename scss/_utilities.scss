@@ -1,0 +1,167 @@
+@import "config";
+
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.6rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: $main-color;
+    background-color: transparent;
+    border: 1px solid $main-color;
+  }
+
+  &-main-upgraded {
+    display: inline-block;
+    text-align: center;
+    padding: 0.6rem;
+    width: 150px;
+    height: 25px;
+    background-color: transparent;
+    color: $main-color;
+    border: 1px solid $main-color;
+    z-index: 1;
+    position: relative;
+    transition: all 0.5s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+      opacity: 0;
+      background-color: $main-color;
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &::before {
+        transition: all 0.5s ease;
+        top: -1px;
+        right: -1px;
+        left: -1px;
+        bottom: -1px;
+        opacity: 1;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: $dark-color;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: $light-color;
+    background-color: $dark-color;
+  }
+}
+
+// Backgrounds
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: set-text-color($main-color);
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+
+  &-medium {
+    background-color: $medium-color;
+    color: set-text-color($medium-color);
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding
+
+.py {
+  &-1 {
+    padding: 1rem 0rem;
+  }
+
+  &-2 {
+    padding: 2rem 0rem;
+  }
+
+  &-3 {
+    padding: 3rem 0rem;
+  }
+
+  &-4 {
+    padding: 4rem 0rem;
+  }
+}
+
+// Margin
+
+.my {
+  &-1 {
+    margin: 1rem 0rem;
+  }
+
+  &-2 {
+    margin: 2rem 0rem;
+  }
+
+  &-3 {
+    margin: 3rem 0rem;
+  }
+
+  &-4 {
+    margin: 4rem 0rem;
+  }
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background-color: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}

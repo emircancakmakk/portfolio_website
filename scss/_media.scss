@@ -1,0 +1,152 @@
+// Tablet & Smallers
+
+@media screen and (max-width: 1024px) {
+  #header-home {
+    height: 35rem;
+
+    .header-content {
+      text-align: center;
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3"
+          "aw4";
+      }
+
+      .bio-image {
+        width: 300px;
+        justify-self: center;
+      }
+
+      .bio {
+        border: none;
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+
+    &-d {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+// Smartphones
+@media screen and (max-width: 500px) {
+  #main-nav {
+    display: block;
+    ul {
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+
+  #header {
+    &-home {
+      height: 6rem;
+      border-bottom: 1px solid $main-color;
+      background-position: top;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      background-position: top;
+      height: 6rem;
+    }
+  }
+
+  // Stack grid columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  // Home
+  #home {
+    &-a {
+      .specials {
+        div {
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #d6d6d6;
+
+          &:last-child {
+            border: none;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &-b {
+      .stats {
+        div {
+          padding: 2rem 0 1rem 0;
+        }
+      }
+    }
+  }
+
+  //   Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message";
+      }
+
+      button[type="submit"] {
+        width: 100%;
+      }
+    }
+
+    &-b {
+      .contact-info {
+        div {
+          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #555;
+
+          &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 8rem;
+
+    .footer-content {
+      height: 5rem;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Emircan Çakmak | Contact Me</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section A: Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name";
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject";
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email";
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone";
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message";
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact info -->
+    <div id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>emircancakmak82@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(+90) 507 897 6685</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>Address</h3>
+            <p>Istanbul/Turkey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section C: Tagline -->
+  <section id="contact-c" class="bg-main py-3">
+    <div class="container">
+      <h1>Let's Start Your Next Project, Visit The Link Below</h1>
+      <a href="https://www.fiverr.com/emircancakmak" target="_blank"><img src="./img/logos/fiver_logo.png" alt=""></a>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer id="main-footer">
+  <div class="footer-content container">
+    <p>Copyright &copy; 2022. All Rights Reserved</p>
+    <div class="social">
+      <a href="https://www.instagram.com/emircancakmakk/" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://twitter.com/emircancakmakk" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+      <a href="https://github.com/emircancakmakk" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/emircan-%C3%A7akmak-6015681b8/"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

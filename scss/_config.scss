@@ -1,0 +1,25 @@
+// Variables
+$website-width: 1360px;
+$main-color: #ca2430;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url(../img/showcase_1.jpg);
+
+// Set text color
+
+@function set-text-color($bg-color) {
+  @if (lightness($bg-color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Progress animation
+
+@keyframes progress-animate {
+  from {
+    width: 0;
+  }
+}
