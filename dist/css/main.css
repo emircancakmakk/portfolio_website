@@ -560,6 +560,11 @@ img {
     padding: 0.5rem 1rem; }
     #contact-a .text-fields .text-input:focus {
       outline-color: #ca2430; }
+  #contact-a .text-fields .recaptcha {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 #contact-a button[type="submit"] {
   width: 50%; }

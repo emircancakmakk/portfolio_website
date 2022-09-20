@@ -368,6 +368,13 @@ img {
           outline-color: $main-color;
         }
       }
+
+      .recaptcha {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     button[type="submit"] {
