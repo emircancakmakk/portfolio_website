@@ -75,7 +75,6 @@
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
-  .items,
   #contact-b .contact-info {
     grid-template-columns: 1fr;
   }
@@ -147,6 +146,17 @@
       height: 5rem;
       flex-direction: column;
       padding: 1rem;
+    }
+  }
+
+  // Work
+  .items {
+    grid-template-columns: 1fr;
+
+    .item {
+      &::after {
+        opacity: 0;
+      }
     }
   }
 }

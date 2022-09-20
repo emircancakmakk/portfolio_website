@@ -560,11 +560,6 @@ img {
     padding: 0.5rem 1rem; }
     #contact-a .text-fields .text-input:focus {
       outline-color: #ca2430; }
-  #contact-a .text-fields .recaptcha {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
 
 #contact-a button[type="submit"] {
   width: 50%; }
@@ -646,7 +641,6 @@ img {
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
-  .items,
   #contact-b .contact-info {
     grid-template-columns: 1fr; }
   #home-a .specials div {
@@ -674,4 +668,8 @@ img {
     #main-footer .footer-content {
       height: 5rem;
       flex-direction: column;
-      padding: 1rem; } }
+      padding: 1rem; }
+  .items {
+    grid-template-columns: 1fr; }
+    .items .item::after {
+      opacity: 0; } }
