@@ -56,7 +56,7 @@
   #header {
     &-home {
       height: 6rem;
-      border-bottom: 1px solid $main-color;
+      border-bottom: 2px solid $main-color;
       background-position: top;
 
       .header-content {
@@ -75,6 +75,7 @@
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
+  .items,
   #contact-b .contact-info {
     grid-template-columns: 1fr;
   }
@@ -85,7 +86,7 @@
       .specials {
         div {
           padding-bottom: 1rem;
-          border-bottom: 1px solid #d6d6d6;
+          border-bottom: 2px solid #d6d6d6;
 
           &:last-child {
             border: none;
@@ -151,15 +152,14 @@
 
   // Work
   .items {
-    grid-template-columns: 1fr;
     .item {
-      &::after {
+      &::before {
         opacity: 0;
       }
 
       &:hover {
-        &::after {
-          transform: none;
+        .item-btn {
+          display: none;
         }
       }
     }
