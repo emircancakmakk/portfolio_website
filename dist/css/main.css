@@ -551,6 +551,19 @@ img {
 
 #contact-c {
   text-align: center; }
+  #contact-c .contact-content-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "text text" "f-link b-link"; }
+    #contact-c .contact-content-wrapper h1 {
+      grid-area: text;
+      text-align: center; }
+    #contact-c .contact-content-wrapper .fiver-link {
+      grid-area: f-link; }
+    #contact-c .contact-content-wrapper .bionluk-link {
+      grid-area: b-link; }
+      #contact-c .contact-content-wrapper .bionluk-link img {
+        filter: brightness(0) contrast(50%); }
   #contact-c a img {
     width: 100px;
     margin-top: 1.5rem;
